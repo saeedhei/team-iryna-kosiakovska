@@ -34,5 +34,5 @@ npm outdated
 npm update
 
 git add .
-git commit -m "check required environment variables"
+git commit -m "host port added"
 git push origin main
