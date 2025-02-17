@@ -1,0 +1,42 @@
+{
+  "name": "cards",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "check-node": "ts-node scripts/check-node-version.ts",
+    "check-env": "ts-node scripts/checkEnv.ts",
+    "lint": "eslint . --fix",
+    "dev": "npm run check-env && nodemon -L",
+    "build": "tsc",
+    "postbuild": "ts-node scripts/copy-files.ts",
+    "serve": "node dist/bin/www.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cookie-parser": "~1.4.7",
+    "cors": "^2.8.5",
+    "debug": "~4.4.0",
+    "dotenv": "^16.4.7",
+    "express": "~4.21.2",
+    "http-errors": "~2.0.0",
+    "morgan": "~1.10.0",
+    "nano": "^10.1.4",
+    "pug": "3.0.3"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.8",
+    "@types/cors": "^2.8.17",
+    "@types/debug": "^4.1.12",
+    "@types/express": "^5.0.0",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.13.1",
+    "@types/semver": "^7.5.8",
+    "@typescript-eslint/eslint-plugin": "^8.23.0",
+    "@typescript-eslint/parser": "^8.23.0",
+    "eslint": "^9.19.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
